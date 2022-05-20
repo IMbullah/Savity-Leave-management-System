@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="PavinAndIvanLeave.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            margin-bottom: 0px;
+        }
+        .auto-style3 {
+            text-align: center;
+            font-weight: 700;
+        }
+        .auto-style4 {
+            text-align: center;
+        }
+        .auto-style5 {
+            text-align: center;
+        }
+        #body {
+            height: 661px;
+        }
+        #mainfooterdiv {
+            height: 194px;
+        }
+    </style>
+    <link href="design1.css" rel="stylesheet" />
+</head>
+<body id="body" class="body">
+    <form id="form1" runat="server">
+        <div>
+            <asp:Panel ID="pnlmain" runat="server" Height="30px" Width="100%" BackColor="Black" ForeColor="Gray" CssClass="auto-style4">
+                <asp:Label ID="lbltitle" runat="server" Text="LEAVE MANAGEMENT SYSTEM" Width="30%" CssClass="auto-style3"></asp:Label></asp:Panel>
+                <asp:Panel ID="pnllinks" runat="server" Width="100%" BackColor="Black" CssClass="pnllinks">
+                    <div>
+                        <asp:LinkButton ID="lnkemployee" runat="server" Height="30px" Width="23%" ForeColor="Gray" PostBackUrl="~/Login.aspx">Login</asp:LinkButton>
+                        <asp:LinkButton ID="lnkadmin" runat="server" Height="30px" Width="23%" ForeColor="Gray" PostBackUrl="~/create.aspx">New</asp:LinkButton>
+                        <asp:LinkButton ID="lnkdetail" runat="server" Height="30px" Width="23%" ForeColor="Gray" CausesValidation="False" PostBackUrl="~/Records.aspx">Records</asp:LinkButton>
+                        <asp:LinkButton ID="lnkabout" runat="server" Height="30px" OnClick="LinkButton4_Click" Width="23%" ForeColor="Gray" PostBackUrl="~/Apply.aspx">Apply</asp:LinkButton>
+                    </div>
+            </asp:Panel>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:Panel ID="pnlcontent" runat="server" CssClass="auto-style1" Height="289px" Width="100%" BackColor="White" HorizontalAlign="Center">
+                </asp:Panel>
+            </asp:ContentPlaceHolder>
+        </div>
+        <asp:Panel ID="pnlfooter" runat="server" BackColor="Black" CssClass="pnlfooter" ForeColor="Blue" Height="247px" Width="1266px" Direction="LeftToRight" HorizontalAlign="Center">
+            <div class="mainfooterdiv" id="mainfooterdiv">
+                <h1>GET IN TOUCH</h1>
+                <p>
+                    Telephone:+254 712345678</p>
+                <br />
+                <a href="mailto:Email:Example@gmail.com">Email:Example@gmail.com</a><br /><p>
+                    Office Location: Afya centre</p>
+                <br />
+                Copyright 2021</div>
+        </asp:Panel>
+    </form>
+</body>
+</html>

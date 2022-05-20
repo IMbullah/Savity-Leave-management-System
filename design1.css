@@ -1,0 +1,30 @@
+﻿body {
+    display: flex;
+    flex-direction: row;
+}
+.pnllinks {
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.lnkdetails{
+    width:25%
+}
+.pnlfooter{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 0px;
+}
+.loginMain{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.divbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+

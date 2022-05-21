@@ -19,7 +19,7 @@ namespace PavinAndIvanLeave
         protected void Btnlogin_Click1(object sender, EventArgs e)
         {
             string connectionString;
-            connectionString =;
+            connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\UserData1.mdf;Integrated Security=True";
             SqlConnection cnn;
             cnn = new SqlConnection(connectionString);
             cnn.Open();

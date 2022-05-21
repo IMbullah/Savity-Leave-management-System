@@ -18,14 +18,12 @@
         .auto-style4 {
             text-align: center;
         }
-        .auto-style5 {
-            text-align: center;
-        }
         #body {
             height: 661px;
         }
         #mainfooterdiv {
             height: 194px;
+            width: 1487px;
         }
     </style>
     <link href="design1.css" rel="stylesheet" />
@@ -37,25 +35,25 @@
                 <asp:Label ID="lbltitle" runat="server" Text="LEAVE MANAGEMENT SYSTEM" Width="30%" CssClass="auto-style3"></asp:Label></asp:Panel>
                 <asp:Panel ID="pnllinks" runat="server" Width="100%" BackColor="Black" CssClass="pnllinks">
                     <div>
-                        <asp:LinkButton ID="lnkemployee" runat="server" Height="30px" Width="23%" ForeColor="Gray" PostBackUrl="~/Login.aspx">Login</asp:LinkButton>
-                        <asp:LinkButton ID="lnkadmin" runat="server" Height="30px" Width="23%" ForeColor="Gray" PostBackUrl="~/create.aspx">New</asp:LinkButton>
-                        <asp:LinkButton ID="lnkdetail" runat="server" Height="30px" Width="23%" ForeColor="Gray" CausesValidation="False" PostBackUrl="~/Records.aspx">Records</asp:LinkButton>
-                        <asp:LinkButton ID="lnkabout" runat="server" Height="30px" OnClick="LinkButton4_Click" Width="23%" ForeColor="Gray" PostBackUrl="~/Apply.aspx">Apply</asp:LinkButton>
+                        <asp:LinkButton ID="lnkemployee" runat="server" Height="30px" Width="23%" ForeColor="Gray" PostBackUrl="~/Login.aspx" CssClass="lnkbtns">Login</asp:LinkButton>
+                        <asp:LinkButton ID="lnkadmin" runat="server" Height="30px" Width="23%" ForeColor="Gray" PostBackUrl="~/create.aspx" CssClass="lnkbtns">New</asp:LinkButton>
+                        <asp:LinkButton ID="lnkdetail" runat="server" Height="30px" Width="23%" ForeColor="Gray" CausesValidation="False" PostBackUrl="~/Records.aspx" CssClass="lnkbtns">Records</asp:LinkButton>
+                        <asp:LinkButton ID="lnkabout" runat="server" Height="30px" OnClick="LinkButton4_Click" Width="20%" ForeColor="Gray" PostBackUrl="~/Apply.aspx" CssClass="lnkbtns">Apply</asp:LinkButton>
                     </div>
             </asp:Panel>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                <asp:Panel ID="pnlcontent" runat="server" CssClass="auto-style1" Height="289px" Width="100%" BackColor="White" HorizontalAlign="Center">
+                <asp:Panel ID="pnlcontent" runat="server" CssClass="pnlcontent" Height="100%" Width="100%" BackColor="White" HorizontalAlign="Center">
                 </asp:Panel>
             </asp:ContentPlaceHolder>
         </div>
-        <asp:Panel ID="pnlfooter" runat="server" BackColor="Black" CssClass="pnlfooter" ForeColor="Blue" Height="247px" Width="1266px" Direction="LeftToRight" HorizontalAlign="Center">
-            <div class="mainfooterdiv" id="mainfooterdiv">
+        <asp:Panel ID="pnlfooter" runat="server" BackColor="Black" CssClass="pnlfooter" ForeColor="Blue" Height="247px" Width="1466px" Direction="LeftToRight" HorizontalAlign="Center">
+            <div class="pnlfootermain" id="pnlfootermain">
                 <h1>GET IN TOUCH</h1>
                 <p>
-                    Telephone:+254 712345678</p>
+                    Telephone:+254 720447239</p>
                 <br />
-                <a href="mailto:Email:Example@gmail.com">Email:Example@gmail.com</a><br /><p>
-                    Office Location: Afya centre</p>
+                <a href="mailto:Email:Example@gmail.com">Email:pavkiptoo@gmail.com</a><br /><p>
+                    Office Location: Savity House</p>
                 <br />
                 Copyright 2021</div>
         </asp:Panel>
